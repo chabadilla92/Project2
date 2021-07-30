@@ -2,8 +2,8 @@
 
 ## Project Links
 
-- [Github Link: ](https://github.com/chabadilla92/Project2)
-- [Vercel Link: ](https://project2-8o4mrr410-chabadilla92.vercel.app/)
+- [Github Link](https://github.com/chabadilla92/Project2)
+- [Vercel Link](https://project2-8o4mrr410-chabadilla92.vercel.app/)
 
 ## Project Description
 

@@ -1,28 +1,37 @@
 import React from 'react'
+import Form from './Form'
+
+
 
 const AllCharacters = (props) => {
-    // console.log('AllCharacters component-', props.characterArr.items[0].fields.character)
-    
-    // includes contains image url
-    // items contains name and position
-    
-    
+    const [list, setList] = React.useState(props.characterArr.includes.Asset)
+
+  const getList = (search) => {
+    if (search === "") {
+      setList(props.characterArr.includes.Asset)
+    } else {
+      let newList = props.characterArr.includes.Asset.filter((x) => x.fields.character === search || x.fields.description === search)
+      setList(newList)
+    }
+  }
+
     return (
+
+    
     <div>
-        
-        
-        {props.characterArr.items.map((character) => {
-            console.log('Map-', character.fields.character)
-
+        <Form search={getList}/>
+        {list.map((character) => {
             return (
-                <div>
-                <h1 onClick={() => props.selectCharacter(character)}> {character.fields.character}</h1>
-                <div>{character.fields.position}</div>
-
+                <div className="container">
+                <h1 onClick={() => props.selectCharacter(character)}> {character.fields.title}</h1>
+                <img src={character.fields.file.url}/>
+                <div>{character.fields.description}</div>
+                <hr/>
                 </div>
             )
         })}
 
+{/* TO DO: need to add image to the AllCharacters list  */}
         {/* {props.characterArr.includes.Asset.map((image) => {
             console.log('Map image-', image.fields.file.url)
                 return (

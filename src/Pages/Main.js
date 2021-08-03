@@ -3,23 +3,31 @@ import AllCharacters from '../Components/AllCharacters'
 import CharacterCard from '../Components/CharacterCard'
 
 
+
+
 const Main = (props) => {
-    // console.log('Main component -', props.characterArr)
+    console.log('Main component -', props.characterArr.items)
+    
+
 
     const [select, setSelect] = React.useState(null)
     const selectCharacter = async (character) => {
       setSelect({
-            name: character.fields.character,
-            position: character.fields.position
+            name: character.fields.title,
+            position: character.fields.description,
+            image: character.fields.file.url
 
         })
     }
 
 
+
+
     return (
     <div>
+
         <div><AllCharacters characterArr={props.characterArr} selectCharacter={selectCharacter}/></div>
-        <div><CharacterCard select = {select} handleClick={props.addToTeam}/></div>
+        <div><CharacterCard select={select} handleClick={props.addToTeam} label="Add To Team"/></div>
     </div>
     )
 

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { useState, useEffect } from "react"
 import { Route, Switch } from 'react-router';
@@ -23,13 +22,24 @@ function App() {
     setCharacter(data)
   }
 
-  // Add to team state and function 
+  // Add/Remove to team state and function 
   const [team, setTeam] = useState([])
   const addToTeam = (character) => {
     setTeam([...team, character])
   }
+
+  const removeFromTeam = (character) => {
+    const index = team.findIndex((char) => character.id === char.id)
+    const updatedArr = [...team]
+    updatedArr.splice(index, 1)
+    setTeam(updatedArr)
+  }
   
   useEffect(() => {getCharacter()}, [])
+
+  // Creating state to filter the Character list
+
+  
   
   
   const loaded = () => {
@@ -37,18 +47,18 @@ function App() {
     <div className="App">
     
     <Nav />
+    
 
     <Switch>
     <Route exact path="/">
-    <Main characterArr={character} addToTeam={addToTeam}/>
+    <Main characterArr={character} addToTeam={addToTeam} />
     </Route>
 
     <Route path="/MyTeam">
-    <MyTeam />
+    <MyTeam team={team} remove={removeFromTeam}/>
     </Route>
     </Switch>
     
-    <Form />
 
     <Footer />
 

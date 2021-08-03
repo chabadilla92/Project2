@@ -17,7 +17,7 @@ const CharacterCard = (props) => {
     }
 
     const loading = () => {
-        return (<h1>Loading .. </h1>)
+        return (<h1>Select a Champion! </h1>)
     }
 
     return props.select ? loaded() : loading()

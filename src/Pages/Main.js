@@ -25,9 +25,8 @@ const Main = (props) => {
 
     return (
     <div>
-
-        <div><AllCharacters characterArr={props.characterArr} selectCharacter={selectCharacter}/></div>
         <div><CharacterCard select={select} handleClick={props.addToTeam} label="Add To Team"/></div>
+        <div><AllCharacters characterArr={props.characterArr} selectCharacter={selectCharacter}/></div>
     </div>
     )
 

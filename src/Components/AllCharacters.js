@@ -16,8 +16,6 @@ const AllCharacters = (props) => {
   }
 
     return (
-
-    
     <div>
         <Form search={getList}/>
         {list.map((character) => {
@@ -30,17 +28,6 @@ const AllCharacters = (props) => {
                 </div>
             )
         })}
-
-{/* TO DO: need to add image to the AllCharacters list  */}
-        {/* {props.characterArr.includes.Asset.map((image) => {
-            console.log('Map image-', image.fields.file.url)
-                return (
-                    <img src={image.fields.file.url}/>
-                )
-        })} */}
-
-        
-        
     </div>
     )
 }

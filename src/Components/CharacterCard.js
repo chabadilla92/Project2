@@ -6,10 +6,10 @@ const CharacterCard = (props) => {
     // TO DO: need to add image down below 
     const loaded = () => {
     return ( 
-        <div>
-            <h1>{props.select.name}</h1>
-            <div>{props.select.position}</div>
-            <div><img src={props.select.image} style={{height: 100, width: 100}}/></div>
+        <div className="characterCard">
+            <div className="cardImg"><img className="cardImg2" src={props.select.image} style={{height: 100, width: 100}}/></div>
+            <h1 className="cardName">{props.select.name}</h1>
+            <div className="position">{props.select.position}</div>
             <button onClick={() => props.handleClick(props.select)}>{props.label}</button>
         </div>
         

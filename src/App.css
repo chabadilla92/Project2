@@ -1,9 +1,22 @@
 
 .App {
   text-align: center;
-  font-family: 'Mulish', sans-serif;}
+  font-family: 'Mulish', sans-serif;
+}
 
+/* All styling */
+h1 {
+  font-size: 25px;
+  background-color: #E1E1E1;
 
+}
+
+.position {
+  background-color: #E1E1E1;
+  padding-bottom: 10px;
+}
+
+/* NAV */
 .navbar {
   background: #252423;
   height: 70px;
@@ -22,8 +35,52 @@ a {
   margin-top: 22px;
 }
 
+/* HEADER */
+.header {
+  height: 200px;
+}
 
+/* CHARACTER CARD */
+.characterCard {
+  border: 2px solid #E1E1E1;
+  border-radius: 15px;
+  width: 270px;
+  margin: 20px auto;
+  background-color: #E1E1E1;
+}
 
+.cardImg {
+  padding: 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-color: white;
+}
 
+.cardImg2 {
+  border-radius: 50%;
+  border: 5px solid black;
+}
 
+.cardName {
+  margin: 10px 0 0 0;
+  padding: 10px;
+}
 
+button {
+  margin: 20px auto;
+  font-family: 'Mulish', sans-serif;
+  border-radius: 5px;
+  background: white;
+  padding: 5px 10px;
+  border-color: white;
+}
+
+/* FORM */
+form {
+  margin: 30px auto;
+}
+
+/* ALL CHARACTERS */
+.allImg {
+  margin-top: 20px;
+}

@@ -50,7 +50,7 @@ function App() {
     
     <Nav />
     
-
+    <header><img className="header" src="https://res.cloudinary.com/dd1i00sei/image/upload/v1628092897/EaUnExCU8AAalKe_otscuf.jpg"></img></header>
     <Switch>
     <Route exact path="/">
     <Main characterArr={character} addToTeam={addToTeam} />

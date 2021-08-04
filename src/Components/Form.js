@@ -19,7 +19,7 @@ const Form = (props) => {
 
     return <form onSubmit={handleSubmit}>
         <input type="text" onChange={handleChange} value={props.searchTerm} name="searchTerm"/>
-        <input type="submit" value="search"/>
+        <input type="submit" value="Search"/>
     </form>
 }
 

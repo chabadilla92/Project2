@@ -21,10 +21,9 @@ const AllCharacters = (props) => {
         {list.map((character) => {
             return (
                 <div className="container">
+                <img className="allImg" src={character.fields.file.url} style={{height: 100, width: 100}}/>
                 <h1 onClick={() => props.selectCharacter(character)}> {character.fields.title}</h1>
-                <img src={character.fields.file.url} style={{height: 100, width: 100}}/>
-                <div>{character.fields.description}</div>
-                <hr/>
+                {/* <div>{character.fields.description}</div> */}
                 </div>
             )
         })}

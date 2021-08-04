@@ -7,14 +7,9 @@
 /* All styling */
 h1 {
   font-size: 25px;
-  background-color: #E1E1E1;
-
 }
 
-.position {
-  background-color: #E1E1E1;
-  padding-bottom: 10px;
-}
+
 
 /* NAV */
 .navbar {
@@ -36,17 +31,42 @@ a {
 }
 
 /* HEADER */
+header {
+  position: relative;
+}
+
 .header {
   height: 200px;
+  width: 320px;
+}
+
+.header2 {
+  position: absolute;
+  border: 2px solid rgb(24, 170, 247, 0.5);
+  background-color: rgb(24, 170, 247, 0.6);
+  top: 96px;
+  left: 20%;
+  height: 100px;
+  width: 190px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  color: white;
+  text-align: center;
+}
+
+.text {
+  padding-top: 30px;
+
+
 }
 
 /* CHARACTER CARD */
 .characterCard {
-  border: 2px solid #E1E1E1;
+  border: 2px solid #E8E8E8;
   border-radius: 15px;
   width: 270px;
   margin: 20px auto;
-  background-color: #E1E1E1;
+  background-color: #E8E8E8;
 }
 
 .cardImg {
@@ -58,12 +78,16 @@ a {
 
 .cardImg2 {
   border-radius: 50%;
-  border: 5px solid black;
+  border: 8px solid #E8E8E8;
 }
 
 .cardName {
   margin: 10px 0 0 0;
   padding: 10px;
+}
+
+.position {
+  padding-bottom: 10px;
 }
 
 button {
@@ -75,10 +99,56 @@ button {
   border-color: white;
 }
 
+/* CHARACTER CARD LOADING */
+.loading {
+  border: 2px solid #E8E8E8;
+  border-radius: 15px;
+  width: 270px;
+  margin: 20px auto;
+  background-color: #E8E8E8;
+}
+
+.cardImg3 {
+  height: 150px;
+  width: 150px;
+  border: none;
+}
+
+.cardName2 {
+  font-size: 20px;
+  padding: 5px;
+}
+
 /* FORM */
 form {
   margin: 30px auto;
 }
+
+.search {
+  border: 2.5px solid rgb(24, 170, 247, 0.6);
+  border-right: none;
+  padding: 6px;
+
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: black;
+}
+
+.searchButton {
+  width: 60px;
+  height: 32px;
+  padding: 6px;
+  border: 2.5px solid rgb(24, 170, 247, 0.3);
+  text-align: center;
+  font-family: 'Mulish', sans-serif;
+  font-size: 12px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  background-color: rgb(24, 170, 247, 0.6);
+
+}
+
 
 /* ALL CHARACTERS */
 .allImg {

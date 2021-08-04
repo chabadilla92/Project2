@@ -17,7 +17,12 @@ const CharacterCard = (props) => {
     }
 
     const loading = () => {
-        return (<h1>Select a Champion! </h1>)
+        return (
+        <div className="characterCard">
+        <div className="cardImg"><img className="cardImg3" src={"https://res.cloudinary.com/dd1i00sei/image/upload/v1628098514/908f95127caf7f739877f9f555807361_ab9avo.png"}/></div>
+        <h1 className="cardName2">Select a Champion! </h1>
+        </div>
+        )
     }
 
     return props.select ? loaded() : loading()

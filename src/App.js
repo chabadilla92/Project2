@@ -50,7 +50,10 @@ function App() {
     
     <Nav />
     
-    <header><img className="header" src="https://res.cloudinary.com/dd1i00sei/image/upload/v1628092897/EaUnExCU8AAalKe_otscuf.jpg"></img></header>
+    <header>
+      <img className="header" src="https://res.cloudinary.com/dd1i00sei/image/upload/v1628092897/EaUnExCU8AAalKe_otscuf.jpg"></img>
+      <div className="header2"><div className="text">League of Legends Champion Guide</div></div>
+      </header>
     <Switch>
     <Route exact path="/">
     <Main characterArr={character} addToTeam={addToTeam} />

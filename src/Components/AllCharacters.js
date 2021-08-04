@@ -4,7 +4,7 @@ import Form from './Form'
 
 
 const AllCharacters = (props) => {
-    const [list, setList] = React.useState(props.characterArr.includes.Asset)
+  const [list, setList] = React.useState(props.characterArr.includes.Asset)
 
   const getList = (search) => {
     if (search === "") {
@@ -18,10 +18,11 @@ const AllCharacters = (props) => {
     return (
     <div>
         <Form search={getList}/>
+        
         {list.map((character) => {
             return (
                 <div className="container">
-                <img className="allImg" src={character.fields.file.url} style={{height: 100, width: 100}}/>
+                <img onClick={() => props.selectCharacter(character)} className="allImg" src={character.fields.file.url} style={{height: 100, width: 100}}/>
                 <h1 onClick={() => props.selectCharacter(character)}> {character.fields.title}</h1>
                 {/* <div>{character.fields.description}</div> */}
                 </div>

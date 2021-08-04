@@ -22,7 +22,7 @@ const AllCharacters = (props) => {
             return (
                 <div className="container">
                 <h1 onClick={() => props.selectCharacter(character)}> {character.fields.title}</h1>
-                <img src={character.fields.file.url}/>
+                <img src={character.fields.file.url} style={{height: 100, width: 100}}/>
                 <div>{character.fields.description}</div>
                 <hr/>
                 </div>

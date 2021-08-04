@@ -2,6 +2,8 @@ import './App.css';
 import React, { useState, useEffect } from "react"
 import { Route, Switch } from 'react-router';
 
+
+
 // Pages
 import Main from './Pages/Main'
 import MyTeam from './Pages/MyTeam'

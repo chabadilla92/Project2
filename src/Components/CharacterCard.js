@@ -9,7 +9,7 @@ const CharacterCard = (props) => {
         <div>
             <h1>{props.select.name}</h1>
             <div>{props.select.position}</div>
-            <div><img src={props.select.image}/></div>
+            <div><img src={props.select.image} style={{height: 100, width: 100}}/></div>
             <button onClick={() => props.handleClick(props.select)}>{props.label}</button>
         </div>
         

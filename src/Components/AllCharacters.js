@@ -18,11 +18,11 @@ const AllCharacters = (props) => {
     return (
     <div>
         <Form search={getList}/>
-        <div className="container">
+        <div className="container" >
         {list.map((character) => {
             return (
                 
-                    <div className="cards">
+                    <div className="cards" onClick={() => props.selectCharacter(character)}>
                         <img onClick={() => props.selectCharacter(character)} className="allImg" src={character.fields.file.url} style={{height: 100, width: 100}}/>
                         <h1 onClick={() => props.selectCharacter(character)}> {character.fields.title}</h1>
                         {/* <div>{character.fields.description}</div> */}

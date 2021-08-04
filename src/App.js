@@ -7,6 +7,7 @@ import { Route, Switch } from 'react-router';
 // Pages
 import Main from './Pages/Main'
 import MyTeam from './Pages/MyTeam'
+import About from './Pages/About'
 
 
 // Components
@@ -52,7 +53,11 @@ function App() {
     
     <header>
       <img className="header" src="https://res.cloudinary.com/dd1i00sei/image/upload/v1628092897/EaUnExCU8AAalKe_otscuf.jpg"></img>
-      <div className="header2"><div className="text">League of Legends Champion Guide</div></div>
+      <div className="header2">
+        <div className="text">League of Legends Champion Guide</div>
+        <p>Not all champions are listed</p>
+        <p>Search based on champion name or role</p>
+      </div>
       </header>
     <Switch>
     <Route exact path="/">
@@ -61,6 +66,10 @@ function App() {
 
     <Route path="/MyTeam">
     <MyTeam team={team} remove={removeFromTeam}/>
+    </Route>
+
+    <Route path="/About">
+    <About />
     </Route>
     </Switch>
     

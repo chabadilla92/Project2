@@ -11,6 +11,8 @@ h1 {
 
 
 
+
+
 /* NAV */
 .navbar {
   background: #252423;
@@ -56,8 +58,10 @@ header {
 
 .text {
   padding-top: 30px;
+}
 
-
+p {
+  display: none;
 }
 
 /* CHARACTER CARD */
@@ -97,6 +101,8 @@ button {
   background: white;
   padding: 5px 10px;
   border-color: white;
+  cursor: pointer;
+
 }
 
 /* CHARACTER CARD LOADING */
@@ -128,9 +134,7 @@ form {
   border: 2.5px solid rgb(24, 170, 247, 0.6);
   border-right: none;
   padding: 6px;
-
   border-radius: 5px 0 0 5px;
-  outline: none;
   color: black;
 }
 
@@ -151,6 +155,8 @@ form {
 
 
 /* ALL CHARACTERS */
+
+
 .allImg {
   margin-top: 20px;
 }
@@ -165,16 +171,23 @@ form {
 
 .allImg {
   border-radius: 50%;
-  border: 8px solid #E8E8E8;
+  border: 12px double #E8E8E8;
 }
 
+/* FOOTER */
 footer {
   height: 200px;
   background-color: #252423; 
   color: white;
 }
 
-@media screen and (max-width:768px) {
+/* ABOUT */
+.about {
+  margin: 30px auto;
+  width: 70%;
+}
+
+@media screen and (min-width:768px) {
   .header {
     width: 768px;
     height: 450px;
@@ -189,8 +202,13 @@ footer {
 
   .text {
     font-size: 40px;
-    padding-top: 60px;
+    
   }
+
+  p {
+    display: block; 
+  }
+
 
   .container {
     display: flex;
@@ -200,5 +218,32 @@ footer {
     border-left: 2px solid rgb(24, 170, 247, 0.6);
 
     padding: 2px 20px; 
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .header {
+    width: 100%;
+    height: 500px;
+  }
+
+  .header2 {
+    height: 244px;
+    width: 60%;
+  }
+
+  .text {
+    font-size: 30px;
+    padding-top: 60px;
+  }
+
+  .container {
+    width: 800px;
+  }
+
+  div.cards:hover {
+    background-color: rgb(24, 170, 247, 0.6);
+    cursor: pointer;
+
   }
 }

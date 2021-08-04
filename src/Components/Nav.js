@@ -7,6 +7,7 @@ const Nav = (props) => {
     return (
     <div className="navbar">
     <Link to="/"><div className="logo"><img src={url} style={{width: 70, height:70}}/></div></Link>
+    <Link to="/About" className="myteam"><div>ABOUT</div></Link>
     <Link to="/MyTeam" className="myteam"><div>MY TEAM</div></Link>
     </div>
     )

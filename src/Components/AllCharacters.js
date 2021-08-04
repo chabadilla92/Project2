@@ -10,7 +10,7 @@ const AllCharacters = (props) => {
     if (search === "") {
       setList(props.characterArr.includes.Asset)
     } else {
-      let newList = props.characterArr.includes.Asset.filter((x) => x.fields.character === search || x.fields.description === search)
+      let newList = props.characterArr.includes.Asset.filter((x) => x.fields.title === search || x.fields.description === search)
       setList(newList)
     }
   }
@@ -18,16 +18,19 @@ const AllCharacters = (props) => {
     return (
     <div>
         <Form search={getList}/>
-        
+        <div className="container">
         {list.map((character) => {
             return (
-                <div className="container">
-                <img onClick={() => props.selectCharacter(character)} className="allImg" src={character.fields.file.url} style={{height: 100, width: 100}}/>
-                <h1 onClick={() => props.selectCharacter(character)}> {character.fields.title}</h1>
-                {/* <div>{character.fields.description}</div> */}
-                </div>
+                
+                    <div className="cards">
+                        <img onClick={() => props.selectCharacter(character)} className="allImg" src={character.fields.file.url} style={{height: 100, width: 100}}/>
+                        <h1 onClick={() => props.selectCharacter(character)}> {character.fields.title}</h1>
+                        {/* <div>{character.fields.description}</div> */}
+                        </div>
+
             )
         })}
+        </div>
     </div>
     )
 }

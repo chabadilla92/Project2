@@ -3,7 +3,7 @@
 ## Project Links
 
 - [Github Link](https://github.com/chabadilla92/Project2)
-- [Vercel Link](https://project2-o4tp890jt-chabadilla92.vercel.app/)
+- [Vercel Link](https://project2-xi.vercel.app/)
 
 ## Project Description
 

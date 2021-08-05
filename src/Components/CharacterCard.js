@@ -2,8 +2,7 @@ import React from 'react'
 
 const CharacterCard = (props) => {
     // console.log("CharacterCard -", props)
-    
-    // TO DO: need to add image down below 
+
     const loaded = () => {
     return ( 
         <div className="characterCard">
@@ -20,7 +19,7 @@ const CharacterCard = (props) => {
         return (
         <div className="characterCard">
         <div className="cardImg"><img className="cardImg3" src={"https://res.cloudinary.com/dd1i00sei/image/upload/v1628098514/908f95127caf7f739877f9f555807361_ab9avo.png"}/></div>
-        <h1 className="cardName2">Select a Champion! </h1>
+        <h1 className="cardName2">Select a Champion </h1>
         </div>
         )
     }

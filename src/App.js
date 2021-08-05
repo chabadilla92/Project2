@@ -48,35 +48,32 @@ function App() {
   const loaded = () => {
   return (
     <div className="App">
-    
-    <Nav />
-    
-    <header>
-      <img className="header" src="https://res.cloudinary.com/dd1i00sei/image/upload/v1628175999/League_of_Legends_Riot_t57rjq.jpg"></img>
-      <div className="header2">
-        <div className="text">League of Legends Champion Guide</div>
-        <p>Search based on champion name or position</p>
-        <p>Or Position: Top, Middle, Jungle, ADC, Support</p>
-        <p>Pick a Champion and assemble your team!</p>
-      </div>
+      <Nav />
+      <header>
+        <img className="header" src="https://res.cloudinary.com/dd1i00sei/image/upload/v1628175999/League_of_Legends_Riot_t57rjq.jpg"></img>
+        <div className="header2">
+          <div className="text"><span>League of Legends</span> Champion Guide</div>
+          <p>Search based on champion name </p>
+          <p>Or Position: Top, Middle, Jungle, ADC, Support</p>
+          <p>Pick a Champion and assemble your team!</p>
+        </div>
       </header>
-    <Switch>
-    <Route exact path="/">
-    <Main characterArr={character} addToTeam={addToTeam} />
-    </Route>
 
-    <Route path="/MyTeam">
-    <MyTeam team={team} remove={removeFromTeam}/>
-    </Route>
+      <Switch>
+        <Route exact path="/">
+          <Main characterArr={character} addToTeam={addToTeam} />
+        </Route>
 
-    <Route path="/About">
-    <About />
-    </Route>
-    </Switch>
+        <Route path="/MyTeam">
+          <MyTeam team={team} remove={removeFromTeam}/>
+        </Route>
+
+        <Route path="/About">
+          <About />
+        </Route>
+      </Switch>
     
-
-    <Footer />
-
+      <Footer />
     </div>
     )
   }

@@ -18,8 +18,8 @@ const Form = (props) => {
     }
 
     return <form onSubmit={handleSubmit}>
-        <input className="search" type="text" onChange={handleChange} value={props.searchTerm} name="searchTerm"/>
-        <input className="searchButton" type="submit" value="Search"></input>
+        <input className="search" type="text" onChange={handleChange} value={props.searchTerm} name="searchTerm" placeholder="Name, Position.."/>
+        <button className="searchButton" type="submit" value="Search"><i class="fa fa-search"></i></button>
     </form>
 }
 

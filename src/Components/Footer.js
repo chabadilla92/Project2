@@ -5,3 +5,5 @@ const Footer = (props) => {
 }
 
 export default Footer
+
+// Add download league client link that sends you to riot website 

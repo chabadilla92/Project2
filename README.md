@@ -11,22 +11,20 @@ For this project, I plan to make a music sharing website similar to SoundCloud. 
 
 ## API
 
-api: https://cdn.contentful.com/spaces/4mg01ki3nwhk/environments/master/entries?access_token=yJjftR-oMjy-EMJlCKBMPQSGHtDyuUktbMbFaD5gR0o&content_type=song
+api: https://cdn.contentful.com/spaces/4mg01ki3nwhk/environments/master/entries?access_token=yJjftR-oMjy-EMJlCKBMPQSGHtDyuUktbMbFaD5gR0o&content_type=character
 
 ```
-{
 "fields": {
-        "name": "All Apologies",
-        "artist": "Nirvana",
-        "image": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Asset",
-            "id": "2bocs5WoddJ06S4Ga54fNC"
-          }
-        },
-        "genre": "Rock"
-      }
+          "title": "Anivia",
+          "description": "Middle",
+          "file": {
+            "url": "//images.ctfassets.net/4mg01ki3nwhk/1hQjHO6oppAQ9vhMTM63r9/e8331457b42eecd0455c05c057c90949/Anivia.png",
+            "details": {
+              "size": 60509,
+              "image": {
+                "width": 120,
+                "height": 120
+              }
 },
 ```
 

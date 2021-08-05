@@ -16,8 +16,9 @@ const AllCharacters = (props) => {
   }
 
     return (
-    <div>
+    <div className="back">
         <Form search={getList}/>
+            
         <div className="container" >
         {list.map((character) => {
             return (
@@ -31,6 +32,8 @@ const AllCharacters = (props) => {
             )
         })}
         </div>
+           
+
     </div>
     )
 }

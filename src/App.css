@@ -18,19 +18,29 @@ h1 {
   background: #252423;
   height: 70px;
   display: flex; 
-  justify-content: space-around;
+  justify-content: space-between;
+
 }
 
 a {
   text-decoration: none;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
+  padding: 10px;
+  
 }
 
 .myteam {
-  margin-top: 22px;
+  margin-top: 15px;
 }
+
+.myteam1 {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+
 
 /* HEADER */
 header {
@@ -155,7 +165,12 @@ form {
 
 
 /* ALL CHARACTERS */
+h4 {
 
+
+  font-size: 30px;
+  color: rgb(24, 170, 247, 0.6);
+}
 
 .allImg {
   margin-top: 20px;
@@ -187,7 +202,29 @@ footer {
   width: 70%;
 }
 
+h3 {
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+ul.download {
+  padding: 0;
+  margin: 8px;
+
+}
+
+.foot {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+
+
 @media screen and (min-width:768px) {
+  .myteam {
+    margin-left: 510px;
+  }
+  
   .header {
     width: 768px;
     height: 450px;
@@ -201,12 +238,18 @@ footer {
   }
 
   .text {
-    font-size: 40px;
-    
+    font-size: 35px;
+    text-align: left;
+    margin-left: 30px;
+    padding-top: 14px;
   }
 
   p {
     display: block; 
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 0;
+    font-size: 13px;
   }
 
 
@@ -214,14 +257,35 @@ footer {
     display: flex;
     flex-wrap: wrap;
     width: 600px;
-    margin: 10px auto;
-    border-left: 2px solid rgb(24, 170, 247, 0.6);
+    margin: 0 auto;
 
     padding: 2px 20px; 
   }
+
+  h3 {
+    text-align: left;
+    margin-left: 40px;
+  }
+
+  ul.download {
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  
+
+ /* Arrow */
+ 
+
+
 }
 
+
 @media screen and (min-width:1024px) {
+  .myteam {
+    margin-left: 780px;
+  }
+  
   .header {
     width: 100%;
     height: 500px;
@@ -237,6 +301,10 @@ footer {
     padding-top: 60px;
   }
 
+  p {
+    margin-left: 35px;
+  }
+
   .container {
     width: 800px;
   }
@@ -246,4 +314,7 @@ footer {
     cursor: pointer;
 
   }
+
+
+
 }

@@ -52,11 +52,12 @@ function App() {
     <Nav />
     
     <header>
-      <img className="header" src="https://res.cloudinary.com/dd1i00sei/image/upload/v1628092897/EaUnExCU8AAalKe_otscuf.jpg"></img>
+      <img className="header" src="https://res.cloudinary.com/dd1i00sei/image/upload/v1628175999/League_of_Legends_Riot_t57rjq.jpg"></img>
       <div className="header2">
         <div className="text">League of Legends Champion Guide</div>
-        <p>Not all champions are listed</p>
-        <p>Search based on champion name or role</p>
+        <p>Search based on champion name or position</p>
+        <p>Or Position: Top, Middle, Jungle, ADC, Support</p>
+        <p>Pick a Champion and assemble your team!</p>
       </div>
       </header>
     <Switch>
